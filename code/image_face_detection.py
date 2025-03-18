@@ -23,8 +23,8 @@ def process_frame(frame):
     return frame
 
 # Hardcoded input and output directories
-input_dir   = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\occlusions"         # Path to the directory containing input images
-output_dir  = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\occlusions_output"        # Path to the directory to save processed images
+input_dir   = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface_edited"         # Path to the directory containing input images
+output_dir  = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface_edited_output"        # Path to the directory to save processed images
 
 # Hardcoded cascade classifier paths
 face_cascade_path = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\code\models\haarcascade_frontalface_alt.xml"
