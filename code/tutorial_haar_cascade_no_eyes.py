@@ -9,7 +9,7 @@ def detectAndDisplay(frame):
     faces = face_cascade.detectMultiScale(frame_gray)
     for (x, y, w, h) in faces:
         center = (x + w // 2, y + h // 2)
-        frame = cv.ellipse(frame, center, (w // 2, h // 2), 0, 0, 360, (255, 0, 255), 4)
+        frame = cv.ellipse(frame, center, (w // 2, h // 2), 0, 0, 360, (255, 0, 255), 10)
     cv.imshow('Capture - Face detection', frame)
 
 parser = argparse.ArgumentParser(description='Code for Cascade Classifier tutorial.')
