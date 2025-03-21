@@ -98,7 +98,7 @@ class HaarCascadeSaliencyMap:
         for (x, y, w, h) in faces:
             #cv2.rectangle(overlay, (x, y), (x+w, y+h), (255, 255, 255), 6)
             center = (x + w // 2, y + h // 2)
-            cv2.ellipse(overlay, center, (w // 2, h // 2), 0, 0, 360, (255, 0, 255), 6)
+            cv2.ellipse(overlay, center, (w // 2, h // 2), 0, 0, 360, (255, 225, 255), 10)
         
         return overlay
     
@@ -139,8 +139,8 @@ class HaarCascadeSaliencyMap:
 
 def main():
     # Define input and output directories
-    input_dir = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface_occlusions"
-    output_dir = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface_occlusions_heatmap_output"
+    input_dir = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface"
+    output_dir = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\images\myface_heatmap_output"
 
     # Haar cascade classifier path
     face_cascade_path = r"C:\Users\rawsh\OneDrive - University of Southampton\EE-Y5\CompVis\CW2 CompVis\code\models\haarcascade_frontalface_alt.xml"
